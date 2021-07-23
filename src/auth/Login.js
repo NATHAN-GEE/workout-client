@@ -12,7 +12,7 @@ let handleSubmit = (event) => {
 
     body: JSON.stringify({ username: userName, passwordHash: password }),
     headers: new Headers({
-      Content: "application/json",
+      'Content-Type': "application/json",
     }),
   })
     .then((res) => res.json())
